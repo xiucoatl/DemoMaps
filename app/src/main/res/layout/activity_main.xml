@@ -1,0 +1,113 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="408dp"
+        android:layout_height="340dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </fragment>
+
+    <ImageButton
+        android:id="@+id/Rest1"
+        android:layout_width="111dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/casabarroca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <ImageButton
+        android:id="@+id/Rest2"
+        android:layout_width="111dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/anafre"
+        app:layout_constraintEnd_toStartOf="@+id/Rest1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <ImageButton
+        android:id="@+id/Rest3"
+        android:layout_width="111dp"
+        android:layout_height="103dp"
+        android:src="@drawable/vittorios"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rest4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rest2" />
+
+    <ImageButton
+        android:id="@+id/rest4"
+        android:layout_width="111dp"
+        android:layout_height="103dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/lacasa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rest1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="91dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="20dp"
+        android:text="Anafre rojo"
+        app:layout_constraintBottom_toTopOf="@+id/Rest3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rest2"
+        app:layout_constraintVertical_bias="0.434" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="109dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="36dp"
+        android:text="Casa de Piedra"
+        app:layout_constraintBottom_toTopOf="@+id/rest4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/Rest1"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="90dp"
+        android:text="Vittorios"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rest3"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="La Casa del Mendrugo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rest4"
+        app:layout_constraintVertical_bias="0.254" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
